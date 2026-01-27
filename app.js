@@ -100,7 +100,7 @@ const projects = [
     image: "images/game.png", 
     emoji: "🌱",
     desc: "A simple browser game that encourages environmental awareness through interactive gameplay.",
-    tags: ["HTML", "CSS", "JavaScript"],
+    tags: ["Bootstrap"],
     live: "https://farzana921.github.io/Clean-the-Park-game/",
     code: "https://github.com/Farzana921/Clean-the-Park-game"
   },
