@@ -1,6 +1,6 @@
 /* ================== Two-Color Theme ================== */
 :root{
-  --bg: #F0EEE8;        /* eggshell */
+  --bg: #e7e7e7;        /* eggshell */
   --ink: #2B4C63;       /* deep slate */
   --ink-80: rgba(43,76,99,.80);
   --ink-60: rgba(43,76,99,.60);
