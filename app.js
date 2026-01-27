@@ -69,7 +69,7 @@ const projects = [
     code: "https://github.com/Farzana921/PortFolio"
   },
   {
-    title: "Pocket Classroom (Final Project)",
+    title: "Pocket Classroom",
     image: "images/pocket.png",
     emoji: "📚",
     desc: "A classroom-style web app built as my final project, focused on a clean UI and practical features for learning.",
