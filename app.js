@@ -67,45 +67,48 @@ const projects = [
     live: "#",
     code: "https://github.com/Farzana921"
   },
+{
+  title: "Pocket Classroom (Final Project)",
+  emoji: "📚",
+  desc: "A classroom-style web app built as my final project, focused on a clean UI and practical features for learning.",
+  tags: ["HTML", "CSS", "JavaScript"],
+  live: "https://farzana921.github.io/pocket-classroom-final-project/",
+  code: "https://github.com/Farzana921/pocket-classroom-final-project"
+},
+
+{
+  title: "Foodie Hub",
+  emoji: "🍔",
+  desc: "A food-themed web app showcasing restaurant-style UI with interactive elements and responsive layout.",
+  tags: ["HTML", "CSS", "JavaScript"],
+  live: "https://farzana921.github.io/Foodie_hub-/",
+  code: "https://github.com/Farzana921/Foodie_hub-"
+},
+
+{
+  title: "Library Page (Team Project)",
+  emoji: "📖",
+  desc: "Part of a team-built website — I worked on the Library Page UI and layout to make it clean, intuitive and responsive.",
+  tags: ["HTML", "CSS", "JavaScript"],
+  live: "https://satayesh-esmaily.github.io/Firewall-Power-Web-Seda-/library.html",
+},
+
+{
+  title: "Clean the Park Game",
+  emoji: "🌱",
+  desc: "A simple browser game that encourages environmental awareness through interactive gameplay.",
+  tags: ["HTML", "CSS", "JavaScript"],
+  live: "https://farzana921.github.io/Clean-the-Park-game/",
+  code: "https://github.com/Farzana921/Clean-the-Park-game"
+},
+
   {
-    title: "Security Scanner",
-    emoji: "🔐",
-    desc: "A small tool that checks common issues and helps practice security fundamentals.",
-    tags: ["Python", "Networking"],
-    live: "#",
-    code: "#"
-  },
-  {
-    title: "Data Dashboard",
-    emoji: "📊",
-    desc: "Simple dashboard for visualizing data with clean layouts and charts.",
-    tags: ["Python", "Visualization"],
-    live: "#",
-    code: "#"
-  },
-  {
-    title: "Project 4",
-    emoji: "🧠",
-    desc: "Replace this with your real project description (what it does + impact).",
-    tags: ["JavaScript", "API"],
-    live: "#",
-    code: "#"
-  },
-  {
-    title: "Project 5",
-    emoji: "🛠️",
-    desc: "Replace this with your real project description (features + tools used).",
-    tags: ["HTML", "CSS"],
-    live: "#",
-    code: "#"
-  },
-  {
-    title: "Project 6",
-    emoji: "☁️",
-    desc: "Replace this with your real project description (problem + solution).",
-    tags: ["Cloud", "Basics"],
-    live: "#",
-    code: "#"
+    title: "Afghan Proverbs Website",
+    emoji: "📜",
+    desc: "A cultural website presenting Afghan proverbs with meaning and style — blending tradition with a clean web layout.",
+    tags: ["HTML", "CSS", "JavaScript"],
+    live: "https://farzana921.github.io/Afghan-proverbs-website/",
+    code: "https://github.com/Farzana921/Afghan-proverbs-website"
   }
 ];
 
