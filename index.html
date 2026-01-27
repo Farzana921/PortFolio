@@ -1,163 +1,293 @@
 <!DOCTYPE html>
- <html lang="en">
+<html lang="en">
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Farzana Akbari – Portfolio</title>
-  <meta name="description" content="Farzana Akbari — Computer Science student. Web development and cybersecurity projects."/>
-  <link rel="stylesheet" href="style.css"/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <meta name="description" content="Farzana Akbari — Computer Science student. Web development and cybersecurity projects." />
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <script src="app.js" defer></script>
- </head>
+</head>
+
 <body>
-  <nav class="navbar">
-    <div class="nav-container container">
-      <a class="nav-logo" href="index.html"><img src="images/image.png" alt="Farzana Akbari logo"></a>
+  <!-- Header -->
+  <header class="navbar" id="top">
+    <div class="container nav-container">
+      <a class="nav-logo" href="#top" aria-label="Go to top">
+        <img src="images/image.png" alt="Farzana logo" />
+        <span>FARZANA</span>
+      </a>
+
       <div class="nav-right">
-        <ul class="nav-menu" role="menubar">
-          <li role="none"><a href="index.html" class="nav-link" aria-current="page">Home</a></li>
-          <li role="none"><a href="about.html" class="nav-link">About</a></li>
-          <li role="none"><a href="projects.html" class="nav-link">Projects</a></li>
-          <li role="none"><a href="contact.html" class="nav-link">Contact</a></li>
-        </ul>
-        <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Open menu">
-          <span class="hamburger-line"></span><span class="hamburger-line"></span><span class="hamburger-line"></span>
+        <nav aria-label="Primary">
+          <ul class="nav-menu" id="navMenu">
+            <li><a class="nav-link" href="#home">Home</a></li>
+            <li><a class="nav-link" href="#about">About</a></li>
+            <li><a class="nav-link" href="#projects">Projects</a></li>
+            <li><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Open menu" aria-expanded="false">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
         </button>
       </div>
     </div>
-  </nav>
+  </header>
 
   <main class="main-content">
+
     <!-- HERO -->
-    <section class="hero">
-      <div class="hero-container container">
-        <div class="hero-image">
-          <img src="images/photo.png" alt="Farzana Akbari portrait" class="profile-image" width="320" height="320">
+    <section id="home" class="section hero">
+      <div class="container hero-container">
+        <div class="hero-image reveal">
+          <img src="images/photo.png" alt="Farzana Akbari portrait" class="profile-image" width="340" height="340" />
         </div>
+
         <div class="hero-content">
-          <p class="hero-greeting">Hello, I'm</p>
-          <h1 class="hero-title typewriter-text" data-text="Farzana Akbari">Farzana Akbari</h1>
-          <h2 class="hero-subtitle">A <span class="highlight">Computer Science Student</span></h2>
-          <p class="hero-description">
-            I build simple, secure and human-friendly web experiences while exploring cybersecurity basics.
+          <p class="hero-greeting reveal">Hello, I’m</p>
+          <h1 class="hero-title reveal delay-1">Farzana Akbari</h1>
+          <h2 class="hero-subtitle reveal delay-2">
+            A <span class="highlight">Computer Science Student</span>
+          </h2>
+
+          <p class="hero-description reveal delay-3">
+            I build simple, secure, and human-friendly web experiences while exploring cybersecurity basics.
           </p>
 
-          <div class="hero-social">
-            <a href="https://github.com/Farzana921" class="social-circle" target="_blank" rel="noopener" title="GitHub"><i class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/farzana-akbari-8bb715327/" class="social-circle" target="_blank" rel="noopener" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-            <a href="mailto:farzanasadat547@gmail.com" class="social-circle" title="Email"><i class="fa-solid fa-envelope"></i></a>
+          <div class="hero-social reveal delay-3">
+            <a href="https://github.com/Farzana921" class="social-circle" target="_blank" rel="noopener" aria-label="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/farzana-akbari-8bb715327/" class="social-circle" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="mailto:farzanasadat547@gmail.com" class="social-circle" aria-label="Email">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
           </div>
 
-          <div class="hero-buttons">
+          <div class="hero-buttons reveal delay-3">
             <a href="mailto:farzanasadat547@gmail.com?subject=Opportunity%20for%20Farzana" class="btn btn-primary">Hire Me</a>
-            <a href="contact.html" class="btn btn-outline">Contact Me</a>
+            <a href="#contact" class="btn btn-outline">Contact Me</a>
+          </div>
+
+          <div class="hero-badges reveal delay-3">
+            <span class="badge"><i class="fa-solid fa-location-dot"></i> Dubai, UAE</span>
+            <span class="badge"><i class="fa-solid fa-shield-halved"></i> Security-minded</span>
+            <span class="badge"><i class="fa-solid fa-code"></i> Web + Python</span>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- STATS (simple text) -->
-<!-- STATS (premium cards) -->
-<section class="stats-section">
-  <div class="container">
-    <div class="stats-grid">
-      <div class="stat-card">
-        <div class="num">10+</div>
-        <div class="line"></div>
-        <div class="lab">Projects<br>Completed</div>
+    <!-- STATS -->
+    <section class="section stats-section">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-title reveal">Quick Stats</h2>
+          <p class="section-sub reveal delay-1">A snapshot of what I’ve been building and learning.</p>
+        </div>
+
+        <div class="stats-grid">
+          <div class="stat-card reveal">
+            <div class="num">10+</div>
+            <div class="line"></div>
+            <div class="lab">Projects<br />Completed</div>
+          </div>
+
+          <div class="stat-card reveal delay-1">
+            <div class="num">30+</div>
+            <div class="line"></div>
+            <div class="lab">Programming<br />Challenges</div>
+          </div>
+
+          <div class="stat-card reveal delay-2">
+            <div class="num">5+</div>
+            <div class="line"></div>
+            <div class="lab">Technologies<br />Practiced</div>
+          </div>
+
+          <div class="stat-card reveal delay-3">
+            <div class="num">100+</div>
+            <div class="line"></div>
+            <div class="lab">Hours of<br />Coding</div>
+          </div>
+        </div>
       </div>
-      <div class="stat-card">
-        <div class="num">30+</div>
-        <div class="line"></div>
-        <div class="lab">Programming<br>Challenges</div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section about-section">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-title reveal">About</h2>
+          <p class="section-sub reveal delay-1">A short, professional snapshot.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p>
+              I’m a Computer Science student who enjoys building clean, simple web interfaces and exploring security fundamentals.
+              I value readability, accessibility, and reliability.
+            </p>
+            <p>
+              Recently I’ve been practicing algorithms, writing small Python tools, and shipping tiny UI improvements.
+            </p>
+
+            <div class="pill-row">
+              <span class="pill">HTML</span>
+              <span class="pill">CSS</span>
+              <span class="pill">JavaScript</span>
+              <span class="pill">Python</span>
+              <span class="pill">Java</span>
+              <span class="pill">Git</span>
+            </div>
+          </div>
+
+          <aside class="timeline reveal delay-1" aria-label="Highlights">
+            <div class="tl-item">
+              <div class="tl-title">B.Sc. Computer Science</div>
+              <div class="tl-meta">Currently pursuing</div>
+            </div>
+            <div class="tl-item">
+              <div class="tl-title">Focus Areas</div>
+              <div class="tl-meta">Web Dev · DSA · Cybersecurity basics</div>
+            </div>
+            <div class="tl-item">
+              <div class="tl-title">What I’m Good At</div>
+              <div class="tl-meta">Problem solving · UI building · Security mindset</div>
+            </div>
+          </aside>
+        </div>
+
+        <div class="goodat-grid">
+          <div class="goodat-card reveal">
+            <div class="g-icon">🧩</div>
+            <h3>Problem Solving</h3>
+            <p>Practicing DSA and building logic.</p>
+          </div>
+
+          <div class="goodat-card reveal delay-1">
+            <div class="g-icon">🧱</div>
+            <h3>UI Building</h3>
+            <p>Clean layouts, responsive pages, micro-interactions.</p>
+          </div>
+
+          <div class="goodat-card reveal delay-2">
+            <div class="g-icon">🔒</div>
+            <h3>Security Mindset</h3>
+            <p>Basics, hygiene, and safer-by-default thinking.</p>
+          </div>
+        </div>
+
+        <div class="section-split reveal"></div>
+
+        <div class="section-head">
+          <h3 class="section-title reveal">Interests</h3>
+          <p class="section-sub reveal delay-1">The areas I’m exploring and enjoying.</p>
+        </div>
+
+        <div class="interests-grid">
+          <div class="interest-card reveal"><h4>Software Development</h4><p>Building efficient and user-friendly applications.</p></div>
+          <div class="interest-card reveal delay-1"><h4>Web Development</h4><p>Responsive and interactive web experiences.</p></div>
+          <div class="interest-card reveal delay-2"><h4>Data Science</h4><p>Exploring analysis and ML concepts.</p></div>
+          <div class="interest-card reveal delay-3"><h4>Mobile Development</h4><p>Interested in developing mobile apps.</p></div>
+          <div class="interest-card reveal"><h4>Cyber Security</h4><p>Ethical hacking, forensics, network basics.</p></div>
+          <div class="interest-card reveal delay-1"><h4>Cloud Computing</h4><p>Learning platforms and distributed systems.</p></div>
+        </div>
       </div>
-      <div class="stat-card">
-        <div class="num">5+</div>
-        <div class="line"></div>
-        <div class="lab">Technologies<br>Mastered</div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section projects-section">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-title reveal">Projects</h2>
+          <p class="section-sub reveal delay-1">Here are some of the projects I’ve worked on (6).</p>
+        </div>
+
+        <!-- JS will render the cards here -->
+        <div class="projects-grid" id="projectsGrid" aria-live="polite"></div>
+
+        <div class="projects-note reveal">
+          Want to add more projects? Just add another object inside <span class="code-inline">projects</span> in <span class="code-inline">app.js</span>.
+        </div>
       </div>
-      <div class="stat-card">
-        <div class="num">100+</div>
-        <div class="line"></div>
-        <div class="lab">Hours of<br>Coding</div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-title reveal">Contact</h2>
+          <p class="section-sub reveal delay-1">Email is the fastest way to reach me.</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <div class="tile">
+              <p><strong>Email:</strong> <a href="mailto:farzanasadat547@gmail.com">farzanasadat547@gmail.com</a></p>
+            </div>
+            <div class="tile">
+              <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/farzana-akbari-8bb715327/" target="_blank" rel="noopener">Farzana Akbari</a></p>
+            </div>
+            <div class="tile">
+              <p><strong>GitHub:</strong> <a href="https://github.com/Farzana921" target="_blank" rel="noopener">Farzana921</a></p>
+            </div>
+
+            <div class="contact-social">
+              <a class="social-sm" href="https://github.com/Farzana921" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+              <a class="social-sm" href="https://www.linkedin.com/in/farzana-akbari-8bb715327/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+              <a class="social-sm" href="mailto:farzanasadat547@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+          </div>
+
+          <!-- Contact form: creates a mailto link (no backend needed) -->
+          <form id="contactForm" class="contact-form reveal delay-1">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input id="name" name="name" autocomplete="name" required />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input id="email" type="email" name="email" autocomplete="email" required />
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <select id="subject" name="subject" required>
+                <option value="">Select…</option>
+                <option value="Collaboration">Collaboration</option>
+                <option value="Internship">Internship</option>
+                <option value="Networking">Networking</option>
+                <option value="Project">Project</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="6" required></textarea>
+            </div>
+
+            <button class="btn btn-primary" type="submit">Send Message</button>
+            <p class="form-hint" id="formLiveRegion" role="status" aria-live="polite"></p>
+          </form>
+        </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
+  </main>
 
-    <!-- AREAS OF INTEREST (simple list) -->
-<section class="interests-section">
-  <div class="container">
-    <h2>Interests</h2>
-    <p class="interests-sub">The areas I’m exploring and enjoying.</p>
-
-    <div class="interests-grid">
-      <div class="interest-card">
-        <h4>Software Development</h4>
-        <p>Building efficient and user-friendly applications</p>
-      </div>
-
-      <div class="interest-card">
-        <h4>Web Development</h4>
-        <p>Creating responsive and interactive web experiences</p>
-      </div>
-
-      <div class="interest-card">
-        <h4>Data Science</h4>
-        <p>Exploring data analysis and machine learning concepts</p>
-      </div>
-
-      <div class="interest-card">
-        <h4>Mobile Development</h4>
-        <p>Interested in developing mobile applications</p>
-      </div>
-
-      <div class="interest-card">
-        <h4>Cyber Security</h4>
-        <p>Network security, ethical hacking, and digital forensics</p>
-      </div>
-
-      <div class="interest-card">
-        <h4>Cloud Computing</h4>
-        <p>Learning about cloud platforms and distributed systems</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-
-    <!-- PROJECTS (clean cards) -->
-<!-- FEATURED PROJECTS (circular cards) -->
-<section class="projects-preview">
-  <div class="container">
-    <h3 class="section-title">Featured Projects</h3>
-
-    <div class="projects-grid">
-      <article class="project-ball">
-        <div class="icon">🌐</div>
-        <h4>Portfolio Website</h4>
-        <div class="tech">HTML · CSS · JS</div>
-      </article>
-
-      <article class="project-ball">
-        <div class="icon">🔐</div>
-        <h4>Security Scanner</h4>
-        <div class="tech">Python · Networking</div>
-      </article>
-
-      <article class="project-ball">
-        <div class="icon">📊</div>
-        <h4>Data Dashboard</h4>
-        <div class="tech">Python · Visualization</div>
-      </article>
-    </div>
-  </div>
-</section>
-<footer class="site-footer">
-  <div class="container">
-    <div class="footer-grid">
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
       <div class="foot-brand">
         <div class="foot-logo">
           <img src="images/image.png" alt="Farzana logo" />
@@ -166,36 +296,30 @@
         <p>Computer Science student focusing on clean web UIs and security basics.</p>
       </div>
 
-      <nav class="foot-links" aria-label="Footer navigation">
+      <nav class="foot-links" aria-label="Footer">
         <h4>Links</h4>
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
 
       <div class="foot-contact">
         <h4>Contact</h4>
         <ul>
-          <li><a href="mailto:farzanaakbari29@gmail.com">farzanaakbari29@gmail.com</a></li>
+          <li><a href="mailto:farzanasadat547@gmail.com">farzanasadat547@gmail.com</a></li>
           <li>Dubai, UAE</li>
         </ul>
-
-        <div class="foot-social">
-          <a class="social-sm" href="https://github.com/Farzana921" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-          <a class="social-sm" href="https://www.linkedin.com/in/farzana-akbari-8bb715327/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-          <a class="social-sm" href="mailto:farzanaakbari29@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
-        </div>
       </div>
     </div>
 
-    <div class="footer-bottom">
-      <span>© 2025 Farzana Akbari</span>
+    <div class="container footer-bottom">
+      <span>© 2026 Farzana Akbari</span>
       <span class="dot">•</span>
-      <span>Alright reserved</span>
+      <span>All rights reserved</span>
     </div>
-  </div>
-</footer>
+  </footer>
 </body>
 </html>
