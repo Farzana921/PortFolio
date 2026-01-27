@@ -60,7 +60,7 @@ sections.forEach((sec) => sectionObserver.observe(sec));
 // Projects
 const projects = [
   {
-    title: "Portfolio Website",
+    title: "Personal Portfolio",
     image: "images/PortFolio.png", 
     emoji: "🌐",
     desc: "Responsive single-page portfolio with smooth scroll, animations, and modern UI.",
