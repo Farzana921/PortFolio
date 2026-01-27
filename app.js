@@ -66,7 +66,7 @@ const projects = [
     desc: "Responsive single-page portfolio with smooth scroll, animations, and modern UI.",
     tags: ["HTML", "CSS", "JavaScript"],
     live: "#",
-    code: "https://github.com/Farzana921"
+    code: "https://github.com/Farzana921/PortFolio"
   },
   {
     title: "Pocket Classroom (Final Project)",
