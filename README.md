@@ -72,7 +72,7 @@ If you’d like to collaborate, connect, or just say hi:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/Farzana921/PortFolio
+   git clone https://github.com/Farzana921/PortFolio.git
 Open index.html in your browser
 (No build tools required)
 
