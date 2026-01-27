@@ -109,7 +109,7 @@ const projects = [
     image: "images/Afghan.png", 
     emoji: "📜",
     desc: "A cultural website presenting Afghan proverbs with meaning and style — blending tradition with a clean web layout.",
-    tags: ["HTML", "CSS", "JavaScript"],
+    tags: ["HTML", "CSS",],
     live: "https://farzana921.github.io/Afghan-proverbs-website/",
     code: "https://github.com/Farzana921/Afghan-proverbs-website"
   }
