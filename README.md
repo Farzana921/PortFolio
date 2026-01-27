@@ -3,7 +3,7 @@
 A modern, responsive personal portfolio website showcasing my projects, skills, and contact information.  
 Built with a focus on clean UI, accessibility, and smooth user experience.
 
-🔗 **Live Demo:** https://farzana921.github.io/  
+🔗 **Live Demo:** https://farzana921.github.io/PortFolio/  
 📂 **GitHub:** https://github.com/Farzana921
 
 ---
@@ -72,7 +72,7 @@ If you’d like to collaborate, connect, or just say hi:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/Farzana921/your-repo-name.git
+   git clone https://github.com/Farzana921/PortFolio
 Open index.html in your browser
 (No build tools required)
 

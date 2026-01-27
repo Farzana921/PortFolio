@@ -65,7 +65,7 @@ const projects = [
     emoji: "🌐",
     desc: "Responsive single-page portfolio with smooth scroll, animations, and modern UI.",
     tags: ["HTML", "CSS", "JavaScript"],
-    live: "#",
+    live: "https://farzana921.github.io/PortFolio/",
     code: "https://github.com/Farzana921/PortFolio"
   },
   {
