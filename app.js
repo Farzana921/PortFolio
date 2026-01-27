@@ -1,4 +1,4 @@
-// ========= Mobile menu =========
+//Mobile menu
 const toggleBtn = document.getElementById("mobileMenuToggle");
 const navMenu = document.getElementById("navMenu");
 
@@ -17,7 +17,7 @@ if (toggleBtn && navMenu) {
   });
 }
 
-// ========= Scroll reveal =========
+//Scroll reveal
 const revealEls = document.querySelectorAll(".reveal");
 const revealObserver = new IntersectionObserver(
   (entries) => {
@@ -29,7 +29,7 @@ const revealObserver = new IntersectionObserver(
 );
 revealEls.forEach((el) => revealObserver.observe(el));
 
-// ========= Active nav link on scroll =========
+// Active nav link on scroll 
 const sections = document.querySelectorAll("section[id]");
 const navLinks = document.querySelectorAll(".nav-link");
 
@@ -57,53 +57,56 @@ const sectionObserver = new IntersectionObserver(
 
 sections.forEach((sec) => sectionObserver.observe(sec));
 
-// ========= Projects (edit this array to add/replace your 6 projects) =========
+// Projects
 const projects = [
   {
     title: "Portfolio Website",
+    image: "images/PortFolio.png", 
     emoji: "🌐",
     desc: "Responsive single-page portfolio with smooth scroll, animations, and modern UI.",
     tags: ["HTML", "CSS", "JavaScript"],
     live: "#",
     code: "https://github.com/Farzana921"
   },
-{
-  title: "Pocket Classroom (Final Project)",
-  emoji: "📚",
-  desc: "A classroom-style web app built as my final project, focused on a clean UI and practical features for learning.",
-  tags: ["HTML", "CSS", "JavaScript"],
-  live: "https://farzana921.github.io/pocket-classroom-final-project/",
-  code: "https://github.com/Farzana921/pocket-classroom-final-project"
-},
-
-{
-  title: "Foodie Hub",
-  emoji: "🍔",
-  desc: "A food-themed web app showcasing restaurant-style UI with interactive elements and responsive layout.",
-  tags: ["HTML", "CSS", "JavaScript"],
-  live: "https://farzana921.github.io/Foodie_hub-/",
-  code: "https://github.com/Farzana921/Foodie_hub-"
-},
-
-{
-  title: "Library Page (Team Project)",
-  emoji: "📖",
-  desc: "Part of a team-built website — I worked on the Library Page UI and layout to make it clean, intuitive and responsive.",
-  tags: ["HTML", "CSS", "JavaScript"],
-  live: "https://satayesh-esmaily.github.io/Firewall-Power-Web-Seda-/library.html",
-},
-
-{
-  title: "Clean the Park Game",
-  emoji: "🌱",
-  desc: "A simple browser game that encourages environmental awareness through interactive gameplay.",
-  tags: ["HTML", "CSS", "JavaScript"],
-  live: "https://farzana921.github.io/Clean-the-Park-game/",
-  code: "https://github.com/Farzana921/Clean-the-Park-game"
-},
-
+  {
+    title: "Pocket Classroom (Final Project)",
+    image: "images/pocket.png",
+    emoji: "📚",
+    desc: "A classroom-style web app built as my final project, focused on a clean UI and practical features for learning.",
+    tags: ["HTML", "CSS", "JavaScript"],
+    live: "https://farzana921.github.io/pocket-classroom-final-project/",
+    code: "https://github.com/Farzana921/pocket-classroom-final-project"
+  },
+  {
+    title: "Foodie Hub",
+    image: "images/foodia.png",
+    emoji: "🍔",
+    desc: "A food-themed web app showcasing restaurant-style UI with interactive elements and responsive layout.",
+    tags: ["HTML", "CSS", "JavaScript"],
+    live: "https://farzana921.github.io/Foodie_hub-/",
+    code: "https://github.com/Farzana921/Foodie_hub-"
+  },
+  {
+    title: "Library Page (Team Project)",
+    image: "images/library.png",
+    emoji: "📖",
+    desc: "Part of a team-built website — I worked on the Library Page UI and layout to make it clean, intuitive and responsive.",
+    tags: ["HTML", "CSS", "JavaScript"],
+    live: "https://satayesh-esmaily.github.io/Firewall-Power-Web-Seda-/library.html",
+    code: "#"
+  },
+  {
+    title: "Clean the Park Game",
+    image: "images/game.png", 
+    emoji: "🌱",
+    desc: "A simple browser game that encourages environmental awareness through interactive gameplay.",
+    tags: ["HTML", "CSS", "JavaScript"],
+    live: "https://farzana921.github.io/Clean-the-Park-game/",
+    code: "https://github.com/Farzana921/Clean-the-Park-game"
+  },
   {
     title: "Afghan Proverbs Website",
+    image: "images/Afghan.png", 
     emoji: "📜",
     desc: "A cultural website presenting Afghan proverbs with meaning and style — blending tradition with a clean web layout.",
     tags: ["HTML", "CSS", "JavaScript"],
@@ -116,67 +119,89 @@ function renderProjects() {
   const grid = document.getElementById("projectsGrid");
   if (!grid) return;
 
-  grid.innerHTML = projects.map((p) => {
-    const tags = (p.tags || []).map((t) => `<span class="tag">${t}</span>`).join("");
-    const liveLink = p.live && p.live !== "#"
-      ? `<a class="pill-link" href="${p.live}" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live</a>`
-      : "";
-    const codeLink = p.code && p.code !== "#"
-      ? `<a class="pill-link" href="${p.code}" target="_blank" rel="noopener"><i class="fab fa-github"></i> Code</a>`
-      : "";
+  grid.innerHTML = projects
+    .map((p) => {
+      const tags = (p.tags || [])
+        .map((t) => `<span class="tag">${t}</span>`)
+        .join("");
 
-    return `
-      <article class="project-card reveal">
-        <div class="project-top">
-          <div class="project-emoji">${p.emoji || "✨"}</div>
-          <div class="project-title">${p.title}</div>
-        </div>
-        <div class="project-body">
-          <p class="project-desc">${p.desc || ""}</p>
-          <div class="tags">${tags}</div>
-          <div class="project-links">
-            ${liveLink}
-            ${codeLink}
+      const liveLink =
+        p.live && p.live !== "#"
+          ? `<a class="pill-link" href="${p.live}" target="_blank" rel="noopener">
+               <i class="fa-solid fa-arrow-up-right-from-square"></i> Live
+             </a>`
+          : "";
+
+      const codeLink =
+        p.code && p.code !== "#"
+          ? `<a class="pill-link" href="${p.code}" target="_blank" rel="noopener">
+               <i class="fab fa-github"></i> Code
+             </a>`
+          : "";
+
+      // Full-width
+      return `
+        <article class="project-card reveal">
+
+          <div class="project-image">
+            ${
+              p.image
+                ? `<img src="${p.image}" alt="${p.title} screenshot" loading="lazy">`
+                : `<div class="project-fallback">${p.emoji || "✨"}</div>`
+            }
           </div>
-        </div>
-      </article>
-    `;
-  }).join("");
+
+          <div class="project-content">
+            <h4 class="project-title">${p.title}</h4>
+
+            <p class="project-desc">${p.desc || ""}</p>
+
+            <div class="tags">${tags}</div>
+
+            <div class="project-links">
+              ${liveLink}
+              ${codeLink}
+            </div>
+          </div>
+
+        </article>
+      `;
+    })
+    .join("");
 
   // Observe newly created .reveal items
   const newRevealEls = grid.querySelectorAll(".reveal");
   newRevealEls.forEach((el) => revealObserver.observe(el));
 }
+
 renderProjects();
 
-// ========= Contact form -> mailto (no backend) =========
+//Contact form -> mailto (no backend)
+
 const contactForm = document.getElementById("contactForm");
 const liveRegion = document.getElementById("formLiveRegion");
 
 if (contactForm) {
-  contactForm.addEventListener("submit", (e) => {
+  contactForm.addEventListener("submit", async (e) => {
     e.preventDefault();
 
-    const name = document.getElementById("name")?.value.trim();
-    const email = document.getElementById("email")?.value.trim();
-    const subject = document.getElementById("subject")?.value.trim();
-    const message = document.getElementById("message")?.value.trim();
+    if (liveRegion) liveRegion.textContent = "Sending…";
 
-    const to = "farzanaakbari29@gmail.com";
-    const fullSubject = subject ? `${subject} — from ${name}` : `Message from ${name}`;
-    const body =
-`Name: ${name}
-Email: ${email}
+    try {
+      const res = await fetch(contactForm.action, {
+        method: "POST",
+        body: new FormData(contactForm),
+        headers: { Accept: "application/json" }
+      });
 
-Message:
-${message}`;
-
-    const mailto = `mailto:${to}?subject=${encodeURIComponent(fullSubject)}&body=${encodeURIComponent(body)}`;
-
-    window.location.href = mailto;
-
-    if (liveRegion) {
-      liveRegion.textContent = "Opening your email app…";
+      if (res.ok) {
+        contactForm.reset();
+        if (liveRegion) liveRegion.textContent = "✅ Message sent! I’ll reply soon.";
+      } else {
+        if (liveRegion) liveRegion.textContent = "❌ Something went wrong. Please try again.";
+      }
+    } catch (err) {
+      if (liveRegion) liveRegion.textContent = "❌ Network error. Please try again.";
     }
   });
 }
