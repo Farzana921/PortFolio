@@ -62,7 +62,6 @@ const projects = [
   {
     title: "Personal Portfolio",
     image: "images/PortFolio.png", 
-    emoji: "🌐",
     desc: "Responsive single-page portfolio with smooth scroll, animations, and modern UI.",
     tags: ["HTML", "CSS", "JavaScript"],
     live: "https://farzana921.github.io/PortFolio/",
@@ -71,7 +70,6 @@ const projects = [
   {
     title: "Pocket Classroom",
     image: "images/pocket.png",
-    emoji: "📚",
     desc: "A classroom-style web app built as my final project, focused on a clean UI and practical features for learning.",
     tags: ["HTML", "CSS", "JavaScript"],
     live: "https://farzana921.github.io/pocket-classroom-final-project/",
@@ -80,7 +78,6 @@ const projects = [
   {
     title: "Foodie Hub",
     image: "images/foodia.png",
-    emoji: "🍔",
     desc: "A food-themed web app showcasing restaurant-style UI with interactive elements and responsive layout.",
     tags: ["HTML", "CSS", "JavaScript", "Bootstrap"],
     live: "https://farzana921.github.io/Foodie_hub-/",
@@ -89,7 +86,6 @@ const projects = [
   {
     title: "Library Page (Team Project)",
     image: "images/library.png",
-    emoji: "📖",
     desc: "Part of a team-built website — I worked on the Library Page UI and layout to make it clean, intuitive and responsive.",
     tags: ["HTML", "CSS", "JavaScript"],
     live: "https://satayesh-esmaily.github.io/Firewall-Power-Web-Seda-/library.html",
@@ -98,7 +94,6 @@ const projects = [
   {
     title: "Clean the Park Game",
     image: "images/game.png", 
-    emoji: "🌱",
     desc: "A simple browser game that encourages environmental awareness through interactive gameplay.",
     tags: ["Bootstrap"],
     live: "https://farzana921.github.io/Clean-the-Park-game/",
@@ -107,7 +102,6 @@ const projects = [
   {
     title: "Afghan Proverbs Website",
     image: "images/Afghan.png", 
-    emoji: "📜",
     desc: "A cultural website presenting Afghan proverbs with meaning and style — blending tradition with a clean web layout.",
     tags: ["HTML", "CSS",],
     live: "https://farzana921.github.io/Afghan-proverbs-website/",
