@@ -62,7 +62,7 @@ const projects = [
   {
     title: "Personal Portfolio",
     image: "images/PortFolio.png", 
-    desc: "Responsive single-page portfolio with smooth scroll, animations, and modern UI.",
+    desc:  "Responsive single-page portfolio website featuring smooth animations, modern UI design, and optimized layout for all screen sizes.",
     tags: ["HTML", "CSS", "JavaScript"],
     live: "https://farzana921.github.io/PortFolio/",
     code: "https://github.com/Farzana921/PortFolio"
@@ -70,7 +70,7 @@ const projects = [
   {
     title: "Pocket Classroom",
     image: "images/pocket.png",
-    desc: "A classroom-style web app built as my final project, focused on a clean UI and practical features for learning.",
+    desc: "Classroom-style web application built as a final project, focusing on intuitive UI design, structured content, and interactive learning features.",
     tags: ["HTML", "CSS", "JavaScript"],
     live: "https://farzana921.github.io/pocket-classroom-final-project/",
     code: "https://github.com/Farzana921/pocket-classroom-final-project"
