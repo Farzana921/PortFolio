@@ -70,7 +70,7 @@ const projects = [
   {
     title: "Pocket Classroom",
     image: "images/pocket.png",
-    desc: "Classroom-style web application built as a final project, focusing on intuitive UI design, structured content, and interactive learning features.",
+    desc: "Classroom-style web application, focusing on intuitive UI design, structured content, and interactive learning features.",
     tags: ["HTML", "CSS", "JavaScript"],
     live: "https://farzana921.github.io/pocket-classroom-final-project/",
     code: "https://github.com/Farzana921/pocket-classroom-final-project"
