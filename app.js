@@ -79,7 +79,7 @@ const projects = [
     title: "Foodie Hub",
     image: "images/foodia.png",
     desc: "A food-themed web app showcasing restaurant-style UI with interactive elements and responsive layout.",
-    tags: ["HTML", "CSS", "JavaScript", "Bootstrap"],
+    tags: ["HTML", "CSS", "Bootstrap"],
     live: "https://farzana921.github.io/Foodie_hub-/",
     code: "https://github.com/Farzana921/Foodie_hub-"
   },
