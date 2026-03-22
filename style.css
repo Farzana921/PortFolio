@@ -360,6 +360,9 @@ a{ color: inherit; }
   transition: transform .15s ease, box-shadow .15s ease;
 }
 .project-card{
+  max-width: 100%;
+}
+.project-card{
   padding: 16px;
 }
 .project-card:hover{
