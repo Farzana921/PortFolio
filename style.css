@@ -225,13 +225,18 @@ a{ color: inherit; }
   margin-top: 14px;
 }
 .stat-card{
-  background: var(--card);
-  border: 1.5px solid var(--ink-30);
-  border-radius: var(--radius);
-  padding: 22px 18px;
-  text-align:center;
-  box-shadow: 0 10px 28px rgba(43,76,99,.10);
-  transition: transform .15s ease, box-shadow .15s ease;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.08);
+  backdrop-filter: blur(12px);
+  border-radius: 16px;
+  padding: 22px;
+  transition: all 0.3s ease;
+}
+
+.stat-card:hover{
+  transform: translateY(-8px);
+  border-color: rgba(255,255,255,0.2);
+  box-shadow: 0 20px 60px rgba(0,0,0,0.6);
 }
 .stat-card:hover{
   transform: translateY(-5px);
