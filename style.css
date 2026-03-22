@@ -1,16 +1,17 @@
 /* Design System*/
 :root{
-  --bg: #e7e7e7;       
-  --card: rgba(43,76,99,.06);
-  --ink: #2B4C63;       
-  --ink-80: rgba(43,76,99,.80);
-  --ink-60: rgba(43,76,99,.60);
-  --ink-30: rgba(43,76,99,.30);
-  --ink-16: rgba(43,76,99,.16);
-  --ink-12: rgba(43,76,99,.12);
+  --bg: #0b0b0b;                 /* main background */
+  --card: rgba(255,255,255,0.04);
+  --ink: #ffffff;                /* text color */
 
-  --radius: 16px;
-  --shadow: 0 10px 30px rgba(43,76,99,.14);
+  --ink-80: rgba(255,255,255,.80);
+  --ink-60: rgba(255,255,255,.60);
+  --ink-30: rgba(255,255,255,.30);
+  --ink-16: rgba(255,255,255,.16);
+  --ink-12: rgba(255,255,255,.12);
+
+  --radius: 18px;
+  --shadow: 0 20px 50px rgba(0,0,0,.6);
 
   --container: 1160px;
 }
