@@ -2,18 +2,13 @@
 :root{
   --bg:#050505;
 
-  /* cards */
   --card:rgba(255,255,255,0.04);
   --border:rgba(255,255,255,0.08);
 
-  /* text */
   --text:#ffffff;
   --text-muted:#aaaaaa;
-
-  /* accent (your blue) */
   --accent:#2B4C63;
 
-  /* layout */
   --radius:16px;
   --shadow:0 10px 30px rgba(0,0,0,0.5);
   --container:1160px;}
@@ -262,7 +257,6 @@ a{ color: inherit; }
   line-height: 1.45;
 }
 
-/* ========= About ========= */
 .about-grid{
   display:grid;
   grid-template-columns: 1.25fr .9fr;
@@ -465,20 +459,30 @@ a{ color: inherit; }
   box-shadow: var(--shadow);
 }
 .form-group{ margin-bottom: 14px; }
-label{ font-weight: 900; }
+label{
+  color: white;
+  font-weight: 700;
+}
 input, select, textarea{
   width: 100%;
   padding: 12px 14px;
   margin-top: 6px;
-  border: 1.5px solid var(--ink-30);
+
+  border: 1px solid rgba(255,255,255,0.15);  /* FIX */
   border-radius: 12px;
-  background: transparent;
-  color: var(--ink);
+
+  background: rgba(255,255,255,0.03);        /* subtle card */
+  color: white;
+}
+input::placeholder,
+textarea::placeholder{
+  color: #777;
 }
 input:focus, select:focus, textarea:focus{
-  outline:none;
-  border-color: var(--ink);
-  box-shadow: 0 0 0 3px var(--ink-12);
+  outline: none;
+
+  border-color: white;                       /* brighter */
+  box-shadow: 0 0 0 2px rgba(255,255,255,0.1);
 }
 textarea{ resize: vertical; }
 .form-hint{ margin-top: 10px; color: var(--ink-60); font-weight: 700; }
@@ -1008,8 +1012,6 @@ body{
   background: #050505;
   color: white;
 }
-
-/* subtle glow */
 body::before{
   content: "";
   position: fixed;
