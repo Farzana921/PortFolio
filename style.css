@@ -989,3 +989,30 @@ body::before{
   background: radial-gradient(circle at 10% 10%, rgba(255,255,255,0.06), transparent 40%);
   pointer-events: none;
 }
+/* ===== FORCE DARK MODE FIX ===== */
+
+.project-card{
+  background: rgba(255,255,255,0.04) !important;
+  border: 1px solid rgba(255,255,255,0.1) !important;
+  backdrop-filter: blur(12px);
+}
+
+.stat-card{
+  background: rgba(255,255,255,0.03) !important;
+  border: 1px solid rgba(255,255,255,0.08) !important;
+  backdrop-filter: blur(10px);
+}
+
+.project-image::after{
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    rgba(0,0,0,0.75)
+  ) !important;
+}
+
+.tag{
+  background: rgba(255,255,255,0.06) !important;
+  border: 1px solid rgba(255,255,255,0.1) !important;
+  color: rgba(255,255,255,0.85) !important;
+}
