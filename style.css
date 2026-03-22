@@ -1,28 +1,22 @@
 /* Design System*/
 :root{
   --bg:#050505;
+
+  /* cards */
   --card:rgba(255,255,255,0.04);
   --border:rgba(255,255,255,0.08);
 
+  /* text */
   --text:#ffffff;
   --text-muted:#aaaaaa;
-}
-:root{
-  --bg: #e7e7e7;       
-  --card: rgba(43,76,99,.06);
-  --ink: #2B4C63;       
-  --ink-80: rgba(43,76,99,.80);
-  --ink-60: rgba(43,76,99,.60);
-  --ink-30: rgba(43,76,99,.30);
-  --ink-16: rgba(43,76,99,.16);
-  --ink-12: rgba(43,76,99,.12);
 
-  --radius: 16px;
-  --shadow: 0 10px 30px rgba(43,76,99,.14);
+  /* accent (your blue) */
+  --accent:#2B4C63;
 
-  --container: 1160px;
-}
-
+  /* layout */
+  --radius:16px;
+  --shadow:0 10px 30px rgba(0,0,0,0.5);
+  --container:1160px;}
 *{ box-sizing:border-box; margin:0; padding:0; }
 html{ scroll-behavior:smooth; }
 body{
